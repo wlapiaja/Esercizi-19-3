@@ -1,0 +1,22 @@
+// ES 1
+
+var apply = function (array){
+     return array[0](array[1]);
+
+}
+
+//ES 2
+
+var aa = function(f){
+  return function(array){
+		return array.map(f);
+	}
+}
+
+//ES 3
+
+var comp2 ([f1, f2]){
+	return function(x){
+		return f1(f2(x));
+	}
+}

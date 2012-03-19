@@ -20,3 +20,14 @@ var comp2 ([f1, f2]){
 		return f1(f2(x));
 	}
 }
+
+//ES 4
+
+var distl = function (arr){
+	var result = [];
+	for (int i = 1; i < arr.length, i++){
+		var coppia = [arr[0], arr[i]];
+		result[i-1] = coppia;
+	}
+	return result;
+}
